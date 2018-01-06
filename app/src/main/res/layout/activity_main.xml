@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.musika.widget.NonSwipeableViewPager
+            android:id="@+id/activity_main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/activity_main_bottom_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_song"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/activity_main_bottom_image"
+                    android:layout_width="@dimen/_37sdp"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:src="@drawable/ic_song_sample" />
+
+                <LinearLayout
+                    android:id="@+id/activity_ll_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.musika.widget.CustomTextView
+                        android:id="@+id/activity_main_bottom_artist_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Miss Lira"
+                        android:textColor="@color/new_header_song"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        app:font_type="@string/SFUI_Display_SemiBold" />
+
+                    <com.musika.widget.CustomTextView
+                        android:id="@+id/activity_main_bottom_song_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_minus1sdp"
+                        android:singleLine="true"
+                        android:text="Regreat in your tear"
+                        android:textColor="@color/new_song_hint"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_type="@string/SFUI_Display_SemiBold" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/activity_main_bottom_like"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_heart_outline" />
+
+
+                <ImageView
+                    android:id="@+id/activity_main_bottom_pause"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_pause_red" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/activity_main_bottom_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:max="100"
+                android:padding="0dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:progressDrawable="@drawable/seekbar_normal_progress"
+                android:thumb="@android:color/transparent" />
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/activity_main_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed" />
+    </LinearLayout>
+</layout>

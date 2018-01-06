@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_210sdp"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp">
+
+
+                        <ImageView
+                            android:id="@+id/fragment_album_detials_iv_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/default_img"
+                            android:scaleType="centerCrop">
+
+                        </ImageView>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/coverphoto">
+                        </FrameLayout>
+
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@drawable/profile_placeholder" />-->
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.musika.widget.CustomTextView
+                            android:id="@+id/fragment_album_details_album_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:text=""
+                            android:textColor="@color/btn_red"
+                            android:textSize="@dimen/_16sdp"
+                            app:font_type="@string/SFUI_UI_BOLD" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp">
+
+                            <com.musika.widget.CustomTextView
+                                android:id="@+id/act_tv_artist_song_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:text=""
+                                android:textColor="@color/btn_red"
+                                android:textSize="@dimen/_9sdp"
+                                app:font_type="@string/SFUI_Display_SemiBold" />
+
+                            <com.musika.widget.CustomTextView
+                                android:id="@+id/act_tv_artist_song_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Songs"
+                                android:textColor="@color/btn_red"
+                                android:textSize="@dimen/_9sdp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                app:font_type="@string/SFUI_DISPLAY_LIGHT" />
+                        </LinearLayout>
+
+                        <com.musika.widget.CustomTextView
+                            android:id="@+id/act_tv_artist_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="italic"
+                            app:font_type="@string/SFUI_Text_SemiBold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/fragment_album_details_iv_back"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_33sdp"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--android:layout_width="@dimen/_16sdp"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--android:src="@drawable/ic_back_arrow"-->
+                        <!--android:tint="@color/white"/>-->
+                <!--</RelativeLayout>-->
+
+                <ImageView
+                    android:id="@+id/fragment_album_details_iv_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/fragment_album_details_iv_plus"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_plus_circle"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/fragment_album_details_iv_album_image"
+                    android:layout_width="@dimen/_95sdp"
+                    android:layout_height="@dimen/_95sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:src="@drawable/default_img" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/line" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@android:color/transparent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+
+                        <ImageView
+                            android:id="@+id/fragment_album_details_iv_back_tmp"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_4sdp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_album_details_iv_plus_tmp"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_4sdp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.musika.widget.NonFocusingScrollView
+            android:id="@+id/fragment_artist_details_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.musika.widget.CustomTextView
+                    android:visibility="gone"
+                    android:id="@+id/fragment_album_details_album_no_data_found"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="NO DATA FOUND"
+                    android:textColor="@color/btn_red"/>
+                <android.support.v7.widget.RecyclerView
+                    android:visibility="visible"
+                    android:id="@+id/fragment_album_details_rv_album_song"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/fr_rv_artist_details_pv"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/btn_red"
+                    app:indicatorName="BallClipRotatePulseIndicator" />
+
+                <com.musika.widget.CustomTextView
+                    android:visibility="invisible"
+                    android:id="@+id/fragment_album_details_tv_more_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/more_album"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    app:font_type="@string/SFUI_DISPLAY_HEAVY" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_album_details_more_albums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:id="@+id/fr_rv_artist_details_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    >
+
+                    <com.wang.avi.AVLoadingIndicatorView
+
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:indicatorColor="@color/btn_red"
+                        app:indicatorName="BallPulseIndicator" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.musika.widget.NonFocusingScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

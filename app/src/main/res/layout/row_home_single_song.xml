@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_home_single_song"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_1sdp">
+
+        <com.musika.widget.RoundedCornerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:corner_radius="@dimen/_3sdp">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/row_home_single_song_iv"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/ic_song_sample" />
+
+        </com.musika.widget.RoundedCornerLayout>
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/row_home_single_song_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:ellipsize="marquee"
+            android:text="Hip Hop classic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:font_type="@string/SFUI_DISPLAY_BOLD" />
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/row_home_single_song_tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:ellipsize="marquee"
+            android:text="Michael Jackson"
+            android:textColor="@color/new_off_gray_suggest"
+            android:textSize="@dimen/_9sdp"
+            app:font_type="@string/SFUI_Display_SemiBold" />
+
+    </LinearLayout>
+</layout>

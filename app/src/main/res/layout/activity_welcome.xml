@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_splash" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_splash_layer" />
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/act_welcome_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:background="@drawable/round_corner_white_normal"
+            android:paddingBottom="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:text="@string/other_login_option"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="@string/SFUI_Display_Regular" />
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/act_welcome_tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/round_corner_white_normal"
+            android:paddingBottom="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:text="@string/email_sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="@string/SFUI_Display_Regular" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_65sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_minus7sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_93sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_smubu_text" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_55sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:orientation="vertical">
+
+            <com.musika.widget.CustomTextView
+                android:id="@+id/customTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/african_music_in_ur_hand"
+                android:textColor="@color/new_gray"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="@string/SFUI_Display_Regular" />
+
+
+            <com.musika.widget.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@drawable/round_corner_fb_bg_normal"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                app:rd_cornerRadius="@dimen/_18sdp"
+                app:rd_enable="true"
+                app:rd_maskType="rectangle"
+                app:rd_maxRippleRadius="@dimen/_18sdp"
+                app:rd_padding="@dimen/_18sdp"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@drawable/ic_fb" />
+
+                <com.musika.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_with_fb"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_15sdp"
+                    app:font_type="@string/SFUI_Display_Regular" />
+            </com.musika.widget.CustomLinearLayout>
+
+            <com.musika.widget.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@drawable/round_corner_twitter_bg_normal"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                app:rd_cornerRadius="@dimen/_18sdp"
+                app:rd_enable="true"
+                app:rd_maskType="rectangle"
+                app:rd_maxRippleRadius="@dimen/_18sdp"
+                app:rd_padding="@dimen/_18sdp"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch">
+
+                <ImageView
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/ic_twitter" />
+
+                <com.musika.widget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:text="@string/login_with_twitter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    app:font_type="@string/SFUI_Display_Regular" />
+            </com.musika.widget.CustomLinearLayout>
+
+                      <com.musika.widget.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@drawable/round_corner_white_bg_normal"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                app:rd_cornerRadius="@dimen/_18sdp"
+                app:rd_enable="true"
+                app:rd_maskType="rectangle"
+                app:rd_maxRippleRadius="@dimen/_18sdp"
+                app:rd_padding="@dimen/_18sdp"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch">
+
+                <ImageView
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                     android:src="@drawable/ic_google" />
+
+                <com.musika.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="@string/login_with_google"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    app:font_type="@string/SFUI_Display_Regular" />
+            </com.musika.widget.CustomLinearLayout>
+
+            <com.musika.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/we_will_never_post"
+                android:textColor="@color/new_light_gray"
+                android:textSize="@dimen/_11sdp"
+                app:font_type="@string/SFUI_UI_LIGHT" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

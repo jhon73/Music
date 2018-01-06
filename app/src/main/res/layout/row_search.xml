@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/row_search_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/tv_generes_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Hip Hop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:font_type="@string/SFUI_DISPLAY_BOLD" />
+
+
+        <View
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@color/new_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+    </LinearLayout>
+</layout>

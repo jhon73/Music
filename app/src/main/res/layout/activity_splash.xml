@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_splash" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_splash_layer" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_65sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_minus6sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_smubu_text" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:src="@drawable/ic_music_in_hand" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.musika.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/act_tv_lets_start"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:text="@string/search_text_splash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:font_type="@string/SFUI_Text_Regular" />
+
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/act_tv_lets_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:background="@drawable/round_corner_red_bg"
+            android:gravity="center"
+            android:text="@string/lets_start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:transitionName="@string/transition_lets_start"
+            app:font_type="@string/SFUI_Display_Medium"
+            app:rd_cornerRadius="@dimen/_18sdp"
+            app:rd_enable="true"
+            app:rd_maskType="rectangle"
+            app:rd_maxRippleRadius="@dimen/_18sdp"
+            app:rd_padding="@dimen/_18sdp"
+            app:rd_style="@style/Material.Drawable.Ripple.Touch" />
+    </RelativeLayout>
+</layout>

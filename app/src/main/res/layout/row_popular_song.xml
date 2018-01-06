@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/list_song_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp">
+
+
+            <com.musika.widget.RoundedCornerLayout
+                android:id="@+id/row_popular_song_rl_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:corner_radius="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/row_popular_song_tv_image"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_song_sample" />
+
+            </com.musika.widget.RoundedCornerLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/iv_plus"
+                android:layout_toRightOf="@id/row_popular_song_rl_image"
+                android:orientation="vertical">
+
+
+                <com.musika.widget.CustomTextView
+                    android:id="@+id/row_popular_song_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="We don't talk anymore"
+                    android:textColor="@color/new_header_song"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:font_type="@string/SFUI_DISPLAY_BOLD" />
+
+                <com.musika.widget.CustomTextView
+                    android:id="@+id/row_popular_song_tv_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/new_song_hint"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_type="@string/SFUI_Text_SemiBold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_more"
+                android:tint="@color/btn_red" />
+
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_plus" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/normal_light" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/row_explore_artist_main"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vetical_line"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.musika.widget.CircleImageView
+                android:id="@+id/row_explore_artist_iv"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_artist_sample" />
+
+            <com.musika.widget.CustomTextView
+                android:id="@+id/row_explore_artist_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Miss Lira"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="@string/SFUI_DISPLAY_BOLD" />
+
+            <com.musika.widget.CustomTextView
+                android:id="@+id/row_explore_artist_tv_follow_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_minus2sdp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="132k followers"
+                android:textColor="@color/new_off_gray"
+                android:textSize="@dimen/_9sdp"
+                app:font_type="@string/SFUI_Display_Medium" />
+
+            <com.musika.widget.CustomTextView
+                android:id="@+id/row_explore_artist_tv_follow"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@color/btn_red"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="@string/follow"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:font_type="@string/SFUI_DISPLAY_BOLD" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

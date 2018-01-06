@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a40f0f</color>
+    <color name="colorPrimaryDark">#a40f0f</color>
+    <color name="colorAccent">#a40f0f</color>
+    <color name="white">#fff</color>
+    <color name="btn_red">#a40f0f</color>
+    <color name="btn_twitter">#1da1f2</color>
+    <color name="btn_facebook">#425f9c</color>
+    <color name="black">#000</color>
+    <color name="black_new">#e000</color>
+    <color name="black_trans">#88000000</color>
+    <color name="hintText">#c1c0c0</color>
+    <color name="font_gray">#6a6969</color>
+    <color name="icon_gray">#b0b0b0</color>
+    <color name="main_line">#aba6c1</color>
+    <color name="light_gray">#d3d3d3</color>
+
+    <color name="normal_line">#f5f5f5</color>
+    <color name="dark_gray">#494949</color>
+    <color name="gray">#cecfd2</color>
+    <color name="search_bg">#dee5eb</color>
+    <color name="line">#777777</color>
+    <color name="player_bg">#fcfeff</color>
+    <color name="player_title">#3d3e40</color>
+    <color name="gray_artist">#9da0a6</color>
+    <color name="gray_song">#2f2f2f</color>
+    <color name="bg_song">#f3f3f3</color>
+    <color name="lib_bg">#fefefe</color>
+    <color name="outer_setting">#ececf0</color>
+    <color name="normal_light">#f2f2f2</color>
+    <color name="arrow_color">#847d7d</color>
+    <color name="font_change_password">#686868</color>
+    <color name="red_500">#F44336</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="yellow_700">#FBC02D</color>
+    <color name="default_background">#323232</color>
+    <color name="new_light_gray">#b1b1b1</color>
+    <color name="new_gray">#cfcfcf</color>
+    <color name="new_off_gray">#464545</color>
+    <color name="new_off_gray_suggest">#4c4c4c</color>
+    <color name="new_song_hint">#474747</color>
+    <color name="new_header_song">#262626</color>
+    <color name="new_setting_gray">#414141</color>
+    <color name="new_line">#8e8e8e</color>
+    <color name="new_hint_gray">#a6a5a5</color>
+    <color name="new_gray_follow">#373737</color>
+    <color name="new_gray_follow_border">#bbbbbb</color>
+    <color name="new_search_gray">#6e6e6e</color>
+    <color name="new_search_line">#c2c2c2</color>
+    <color name="new_search_hint">#7b7979</color>
+    <color name="new_search_border">#979797</color>
+    <color name="new_more_color">#212020</color>
+    <color name="follow_default">#a40f0f</color>
+    <color name="follow_tick">#d41616</color>
+    <color name="new_line_gray">#acacac</color>
+
+
+
+    <array name="white">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wheel_picker_row_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="@dimen/_7sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#c1c0c0" />
+
+</LinearLayout>

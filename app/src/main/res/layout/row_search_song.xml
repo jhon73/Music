@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_song_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <com.musika.widget.RoundedCornerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:corner_radius="@dimen/_3sdp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/row_search_song_iv"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/ic_song_sample" />
+
+        </com.musika.widget.RoundedCornerLayout>
+
+
+        <com.musika.widget.CustomTextView
+            android:id="@+id/row_search_song_tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:capitalize="sentences"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="we don't talk anymore"
+            android:textColor="@color/new_header_song"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:font_type="@string/SFUI_DISPLAY_BOLD" />
+
+
+    </LinearLayout>
+</layout>

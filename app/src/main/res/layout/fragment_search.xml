@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_search_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.musika.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/fragment_search_ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_corner_corner_search"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_search_black"
+                android:tint="@color/btn_red" />
+
+            <com.musika.widget.CustomEditText
+                android:id="@+id/fragment_search_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search_for_song_artist"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/new_search_hint"
+                android:textColorHint="@color/new_search_hint"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSize="@dimen/_12sdp"
+                app:font_type="@string/SFUI_DISPLAY_LIGHT" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/fragment_search_progress"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                app:indicatorColor="@color/btn_red"
+                app:indicatorName="CubeTransitionIndicator" />
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/main_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.musika.widget.CustomTextView
+                        android:id="@+id/tv_GoingViral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/new_search_gray"
+                        android:textColorHint="@color/new_search_gray"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_type="@string/SFUI_Display_SemiBold" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_search_rv_viral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.musika.widget.CustomTextView
+                        android:id="@+id/tv_Generes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/new_search_gray"
+                        android:textColorHint="@color/new_search_gray"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_type="@string/SFUI_Display_SemiBold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_search_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/row_search" />
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/search_bg"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_search_rv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:visibility="gone" />
+
+                <com.musika.widget.CustomTextView
+                    android:id="@+id/fragment_search_tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/no_data_found"
+                    android:textColor="@color/line"
+                    android:textColorHint="@color/line"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone"
+                    app:font_type="@string/SFUI_Text_Regular" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
